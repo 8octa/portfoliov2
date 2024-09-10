@@ -88,14 +88,14 @@ const Navbar = () => {
           />
         </li>
 
-        <Link className="text-primary" to="/resume" target="_blank">
+        {/* <Link className="text-primary" to="/resume" target="_blank">
           <Button
             className={`${
               openNav ? "text-xl" : "text-sm"
             } font-extrabold w-[10rem]`}
             text="My Resume"
           />
-        </Link>
+        </Link> */}
       </ul>
     </nav>
   );
