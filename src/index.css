@@ -3,14 +3,30 @@
 @tailwind components;
 @tailwind utilities;
 
+
 :root {
-  font-family: "General Sans", sans-serif;
-  color-scheme: dark;
-  background-color: #0b0216;
-  color: #f8f9fa;
+  font-family: general sans;
+  background-color: var(--background);
+  color: var(--primary);
+  --primary: rgb(248, 249, 250);
+  --secondary: rgb(124, 58, 237);
+  --background: rgb(11, 2, 22);
+  --pink: rgb(255, 0, 204);
+  --gray: rgb(132, 146, 166);
+}
+
+.light {
+  background-color: var(--background);
+  color: var(--primary);
+  --primary: rgb(11, 2, 22);
+  --secondary: rgb(255, 0, 204);
+  --background: rgb(248, 249, 250);
+  --pink: rgb(255, 0, 204);
+  --gray: rgb(70, 72, 77);
 }
 
 * {
+  @apply transition-colors duration-500;
   scroll-behavior: smooth;
 }
 
@@ -23,6 +39,6 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #7c3aed73;
-  outline: 1px solid #7c3aed73;
+  background-color: var(--secondary);
+  outline: 1px solid var(--secondary);
 }

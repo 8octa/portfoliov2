@@ -6,24 +6,33 @@ const Hero = () => {
     <>
       <section
         id="hero"
-        className="container px-5 flex flex-col justify-center items-center text-center h-[100vh] text-primary gap-4"
+        className="container pt-5 flex flex-col justify-center items-center text-center h-[100vh] gap-5 lg:pb-5"
       >
         <div className="border-8 border-secondary rounded-full w-[15rem] h-[15rem]">
           <img className="rounded-full" src="/me.jpg" alt="picture of me" />
         </div>
         <h2 className="text-gray font-bold text-base lg:text-lg xl:text-4xl">
-          Tătaru Mihail-Octavian
+          Hello👋, I am Tătaru Octavian
         </h2>
-        <h1 className="text-5xl lg:text-6xl xl:text-9xl font-extrabold uppercase">
-          Webmaster <br />
-          <strong className="text-secondary">@OSF Digital</strong>
+        <h1 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-extrabold uppercase text-primary">
+          Front-End <br /> <strong className="text-secondary">Developer</strong>
         </h1>
-        <p className="max-w-[60ch] py-5 text-base lg:text-lg">
-          Since
-          <strong className="text-secondary"> 2021</strong> I started working as
-          a Webmaster at OSF Digital, and one year earlier, at my first job, I
-          was a <strong className="text-secondary">Front End Developer</strong>{" "}
-          at a company called eDezvoltator. <br /> This is my portofolio page.
+        <p className="max-w-[60ch] py-5 text-base lg:text-lg text-primary">
+          Welcome to my portofolio page, this unknown land where I am infinitely
+          adding new features and possibilities to my experience.👌Speaking of,
+          I am currently working
+          <strong className="text-secondary"> @OSF Digital</strong> as a
+          <strong className="text-secondary">
+            {" "}
+            Junior Front-End Developer
+          </strong>
+          .Prior to this, at the same company I worked as a
+          <strong className="text-secondary"> Webmaster</strong> for 3 years. My
+          first job was as a{" "}
+          <strong className="text-secondary">
+            Junior Front-End Developer{" "}
+          </strong>
+          at a small company.
         </p>
         <Button
           href="mailto:tataruoctavian5@gmail.com"
@@ -31,7 +40,19 @@ const Hero = () => {
           text="Contact Me!"
         />
 
-        <FaArrowCircleDown className="animate-bounce mt-5" size={25} />
+        <Button
+          href="https://www.linkedin.com/in/tataru-octavian/"
+          target="_blank"
+          className="lg:text-xl bg-[#0072b1]"
+          text="LinkedIn"
+        />
+
+        <div>
+          <FaArrowCircleDown
+            className="animate-[bounce_1s_infinite] mt-5 z-50 text-orange"
+            size={25}
+          />
+        </div>
       </section>
     </>
   );
