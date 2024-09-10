@@ -84,7 +84,7 @@ const About = () => {
         </ul>
       </div>
       <div>
-        <img loading="lazy" src="me-2.jpg" alt="me" width={500} />
+        <img loading="lazy" src="me-2.jpg" alt="me" width={300} />
       </div>
     </section>
   );
