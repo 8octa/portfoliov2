@@ -28,4 +28,10 @@ export default {
       gray: "var(--gray)",
     },
   },
+  plugins: [
+    require("tailwindcss-animated"),
+    require("@tailwindcss/typography"),
+  ],
 };
+
+

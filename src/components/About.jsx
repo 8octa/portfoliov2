@@ -1,4 +1,4 @@
-import React from "react";
+import { useInView } from "react-intersection-observer";
 import {
   FaHtml5,
   FaCss3,
@@ -13,15 +13,30 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiVite, SiVercel, SiVisualstudiocode } from "react-icons/si";
 
 const About = () => {
+  const { ref, inView } = useInView();
+  const { refRocket, inViewRocket } = useInView();
+
   return (
     <section
+      ref={ref}
       id="about"
       className="flex flex-col lg:flex-row justify-center lg:justify-around items-center gap-5 lg:gap-5 container pt-5 text-primary font-semibold lg:pt-[10rem]"
     >
       <div className="flex flex-col gap-2">
         <h2 className="text-primary font-bold text-3xl lg:text-4xl py-5">
+          <p>
+            <span
+              ref={refRocket}
+              className={`inline-block mb-5 ${
+                inViewRocket ? animateRocket : ""
+              }`}
+            >
+              🚀
+            </span>
+          </p>
           About
         </h2>
+
         <p className="text-orange font-bold pb-1">Education:</p>
         <p className="text-primary">Târgoviște University of Valahia</p>
         <p className="text-primary">
