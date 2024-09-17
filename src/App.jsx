@@ -1,23 +1,17 @@
-import Homepage from "./components/Homepage";
-import Cv from "./components/Cv";
-import {
-  createBrowserRouter,
-  createRoutesFromElements,
-  Route,
-  RouterProvider,
-} from "react-router-dom";
-
-const router = createBrowserRouter(
-  createRoutesFromElements(
-    <Route>
-      <Route path="/" index element={<Homepage />} />
-      <Route path="/resume" index element={<Cv />} />
-    </Route>
-  )
-);
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Footer from "./components/Footer";
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <Navbar />
+      <Hero />
+      <About />
+      <Footer />
+    </>
+  );
 }
 
 export default App;

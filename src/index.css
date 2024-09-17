@@ -24,6 +24,11 @@
   --gray: rgb(70, 72, 77);
 }
 
+* {
+  @apply transition-all duration-500;
+  @apply scroll-smooth;
+}
+
 body::-webkit-scrollbar {
   width: 0.5em;
 }

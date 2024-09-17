@@ -3,8 +3,6 @@ import { FaRegMoon, FaHamburger } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
 import { useState, useEffect } from "react";
 import { RemoveScrollBar } from "react-remove-scroll-bar";
-import { Link } from "react-router-dom";
-import Button from "./Button";
 const Navbar = () => {
   const [openNav, setOpenNav] = useState(false);
 
@@ -33,7 +31,7 @@ const Navbar = () => {
   }, [light]);
 
   return (
-    <nav className="flex justify-between items-center p-10 text-md font-extrabold">
+    <nav className="sticky h-5 top-0 flex justify-between items-center p-10 text-md font-extrabold">
       <a href="#hero">
         <LiaReact
           className="text-orange hover:text-pink cursor-pointer duration-0 animate-spin"
@@ -75,9 +73,9 @@ const Navbar = () => {
         <a href="#about" onClick={closeMenu}>
           <li className="text-primary hover:text-pink">About</li>
         </a>
-        <a href="#contact" onClick={closeMenu}>
+        {/* <a href="#contact" onClick={closeMenu}>
           <li className="text-primary hover:text-pink">Contact</li>
-        </a>
+        </a> */}
 
         <li className="text-primary">|</li>
 

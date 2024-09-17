@@ -14,7 +14,9 @@ import { SiVite, SiVercel, SiVisualstudiocode } from "react-icons/si";
 
 const About = () => {
   const { ref, inView } = useInView();
-  const { refRocket, inViewRocket } = useInView();
+  
+
+  console.log(inView);
 
   return (
     <section
@@ -24,15 +26,10 @@ const About = () => {
     >
       <div className="flex flex-col gap-2">
         <h2 className="text-primary font-bold text-3xl lg:text-4xl py-5">
-          <p>
-            <span
-              ref={refRocket}
-              className={`inline-block mb-5 ${
-                inViewRocket ? animateRocket : ""
-              }`}
-            >
-              🚀
-            </span>
+          <p
+            className={`mb-5 overflow-hidden ${inView ? "animateRocket" : ""}`}
+          >
+            🚀
           </p>
           About
         </h2>

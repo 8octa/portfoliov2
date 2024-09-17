@@ -47,7 +47,7 @@ const Hero = () => {
         <Button
           href="https://www.linkedin.com/in/tataru-octavian/"
           target="_blank"
-          className="lg:text-xl bg-[#2b64de]"
+          className="lg:text-xl bg-[#2a56b6] animate-jump-in animate-once animate-delay-[1500ms] animate-fill-both"
           text="LinkedIn"
         />
 
