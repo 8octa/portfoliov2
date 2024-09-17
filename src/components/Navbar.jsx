@@ -31,7 +31,7 @@ const Navbar = () => {
   }, [light]);
 
   return (
-    <nav className="sticky h-5 top-0 flex justify-between items-center p-10 text-md font-extrabold">
+    <nav className="h-5 top-0 flex justify-between items-center p-10 text-md font-extrabold">
       <a href="#hero">
         <LiaReact
           className="text-orange hover:text-pink cursor-pointer duration-0 animate-spin"
@@ -40,7 +40,7 @@ const Navbar = () => {
       </a>
 
       <button
-        className="block lg:hidden text-orange  hover:text-pink"
+        className="block lg:hidden text-orange hover:text-pink"
         onClick={handleMenu}
       >
         <FaHamburger

@@ -43,7 +43,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .animateRocket {
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-name: animate-rocket;
 }
 

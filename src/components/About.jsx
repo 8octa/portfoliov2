@@ -14,7 +14,6 @@ import { SiVite, SiVercel, SiVisualstudiocode } from "react-icons/si";
 
 const About = () => {
   const { ref, inView } = useInView();
-  
 
   console.log(inView);
 
@@ -22,7 +21,7 @@ const About = () => {
     <section
       ref={ref}
       id="about"
-      className="flex flex-col lg:flex-row justify-center lg:justify-around items-center gap-5 lg:gap-5 container pt-5 text-primary font-semibold lg:pt-[10rem]"
+      className="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-5 lg:gap-5 container pt-5 text-primary font-semibold lg:pt-[10rem]"
     >
       <div className="flex flex-col gap-2">
         <h2 className="text-primary font-bold text-3xl lg:text-4xl py-5">
