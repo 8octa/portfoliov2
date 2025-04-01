@@ -6,7 +6,7 @@ const Hero = () => {
     <>
       <section
         id="hero"
-        className="container pt-5 flex flex-col justify-center items-center text-center h-[100vh] gap-5 lg:pb-5"
+        className="container mt-20 flex flex-col justify-center items-center text-center h-[100vh] gap-5 lg:pb-5"
       >
         <div className="border-8 border-secondary hover:border-pink rounded-full w-[15rem] h-[15rem]">
           <img className="rounded-full" src="/me.jpg" alt="picture of me" />
