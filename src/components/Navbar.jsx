@@ -31,7 +31,7 @@ const Navbar = () => {
   }, [light]);
 
   return (
-    <nav className="h-5 top-0 flex justify-between items-center p-10 text-md font-extrabold">
+    <nav className="h-5 flex justify-between items-center p-10 text-md font-extrabold">
       <a href="#hero">
         <LiaReact
           className="text-orange hover:text-pink cursor-pointer duration-0 animate-spin"
